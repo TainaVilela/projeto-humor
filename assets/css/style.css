@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 6em;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+}
+.container_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
+.item{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    align-self: flex-start ;
+}
+.titulo{
+    flex-grow: 2;
+}
+
+.btm{
+    padding: 10px 08px;
+    width: 100px;
+    color: rgb(226, 231, 235);
+    background-color: black;
+    border: solid 1px rgb(197, 86, 86) ;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    user-select: none;
+    cursor:pointer;
+    transition: background 1s ;
+}
+.btm:hover{
+    background-color: aquamarine;
+    transform: scale(1)rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.more{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: mediumaquamarine;
+    background-image: linear-gradient(aquamarine, aquamarine);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px -2px #333;
+    text-shadow: 0 -1px #333;
+    color: rgb(0, 0, 0);
+    font-family: 'theSimsSans', Fallback, sans-serif;
+    font-size: 100%;
+}
+.more:hover{
+    background: aquamarine;
+    cursor: pointer;
+}
+#rodape{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0 0;
+}
