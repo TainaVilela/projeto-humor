@@ -7,10 +7,12 @@ body{
     color: white;
 }
 h1{
+    display: flex;
     font-size: 6em;
     font-family: 'Raleway', sans-serif;
 }
 h2{
+    display: flex;
     font-size: 4em;
     font-family: 'Raleway', sans-serif;
 }
@@ -28,11 +30,11 @@ h2{
     align-items: center;
     gap: 10px;
 }
-@media (max-width: 800px) {
-    .container{
-        flex-direction: column;
-    }
-}
+@media screen and (min-width: 780px) {
+    .full-width-img {
+    margin: auto;
+    width: 90%;
+    }  
 .item{
     display: flex;
     align-self: center;

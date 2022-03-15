@@ -3,16 +3,16 @@ let botao = document.getElementById('button')
 
 botao.addEventListener('click', ()=>{
     if(botao.value == "click"){
-        imagem.src = './assets/img/img2.jpg'
+        imagem.srcset = './assets/img/img2.jpg'
         botao.value = 'abc'
     }
 
     else if(botao.value == 'abc'){
-        imagem.src = './assets/img/img3.jpg'
+        imagem.srcset = './assets/img/img3.jpg'
         botao.value= 'bcd'
     }
     else {
-        imagem.src = './assets/img/img3.jpg'
+        imagem.srcset = './assets/img/img1.jpg'
         botao.value = 'click'
     }
 })
